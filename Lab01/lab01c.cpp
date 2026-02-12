@@ -25,7 +25,8 @@ int main(int argc, char *argv[]) {
         std::cout << "Second number is " << num2 << std::endl;
         std::cout << "Sum is " << num1 + num2 << std::endl;
     } else {
-        std::cout << "Error: arguments must be integers" << std::endl;
+        std::cerr << "Error: arguments must be integers" << std::endl;
+        exit(0);
     }
     return 0;
 }
